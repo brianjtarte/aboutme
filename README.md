@@ -2,9 +2,9 @@
 
 ## About Me
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+For this lab, you will learn about who I am and the things I love most. This will be done using HTML, CSS, and JS.
 
-### Author: Student/Group Name
+### Author: Brian Tarte
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
