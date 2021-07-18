@@ -1,6 +1,4 @@
-* {
-  background-color:darksalmon;
-}
+
 
 main {
   width: 960px;
@@ -23,3 +21,22 @@ header {
   width: 960px;
   margin: 30px auto;
 }
+
+ol li {
+  list-style-type: decimal;
+  font-style:italic;
+ 
+}
+
+
+ol h3 {
+  font-size: 20px;
+  font-weight:bold;
+} 
+
+main p {
+  margin-bottom: 10px;
+}
+
+
+
