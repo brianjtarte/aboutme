@@ -112,42 +112,55 @@ while (attemptsRemaining) {
       alert('The correct answer is ' + myFavNumber);
     }
     else if (userResponse === myFavNumber){
-      alert('Close call, but you got it!');
-      answer++;
+      alert('Close call, but you got');
     }
   }
 
 }
 
-let colors = ['blue', 'green', 'black'];
-let userAnswer = prompt('Can you guess a favorite color of mine?');
+// // array of possible answers
 
-let remaining = 5;
-let attemptsLeft = 5;
+let listOfAnswers = ['GREEN', 'BLUE', 'BLACK']
 
-while (remaining) {
-  for (let i = 0; i < attemptsLeft; i++){
-    if (userAnswer === colors[i]){
-      remaining = 0;
-      alert(`You're right!`);
-      answer++;
+// sets attempts to 6 for next question
+let attemptsLeft = 6
+
+
+
+while (attemptsLeft) {
+  
+  
+
+  let answer = prompt ('Can you guess one of my favorite colors?');
+
+ 
+
+  // subtracts 1 from attempts
+  attemptsLeft--;
+
+  let correct = false;
+  
+  // loops through correct answers to see if answer is correct
+  for (let i = 0; i < listOfAnswers.length; i++) {
+    if (answer.toUpperCase() === listOfAnswers[i]) {
+      alert(`That's correct. I love the color ${listOfAnswers[i]} !`);
+      // sets correct to true to break while loop
+      correct = true
       break;
+    } else {
+      continue;
     }
-    else if (userAnswer !== colors[i]){
-
-      alert(`That is not one of my favorite colors. You have ${remaining} attempts remaining.`);
-      userAnswer = prompt(`Can you try another color?`);
-    }
-    remaining--;
-    if (remaining === 0 && userAnswer !== colors[i]){
-      alert('My favorite colors are: ' + colors);
-    }
-    else if (userAnswer === colors[i]){
-      alert('PHEW! You got it!');
-    }
-
+  }
+  if (correct == true){
+    // increments correctAnswerCount by 1
+    answer++;
+    // sets attempts to 0 to break while loop
+    break;
+  } else {
+    alert(`That is not correct. You have ${attemptsLeft} attempts left.`);
   }
 }
+alert('My three favorite colors are blue, green, and black.');
 
 alert('Your score was ' + answer + ' out of 7');
 
