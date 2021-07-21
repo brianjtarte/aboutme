@@ -10,13 +10,15 @@ h1 {
   text-decoration: underline;
   text-shadow: 2px 1px  #F0BAA8;
   padding-left: 10px;
-  paddint-top: 5px;
+  padding-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
   font-size: 35px;
   font-style:italic;
   padding-left: 10px;
+  font-family:  Georgia, Times, 'Times New Roman', serif;
  
 }
 
@@ -37,6 +39,7 @@ ol {
 ol li {
   list-style-type: decimal;
   font-style:italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 li a:hover {
@@ -61,6 +64,7 @@ img:hover {
   font-weight:bold;
   padding-bottom: 5px;
   color: #A3857A;
+  font-family: Arial, Helvetica, sans-serif;
 } 
 
 main p {
@@ -81,6 +85,10 @@ body {
 
 #education {
   padding-top: 5px;
+}
+
+ul li {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
