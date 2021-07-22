@@ -1,9 +1,10 @@
 'use strict';
 
 let answer = 0;
-function questionOne (){
 let userName = prompt('Hey! What\'s your name?');
 alert('Hello ' + userName);
+
+function questionOne (){
 
 let answer1 = prompt('Do I like dogs?').toLowerCase();
 
@@ -97,6 +98,7 @@ if(answer5 === 'yes' || answer5 === 'y'){
 }
 questionFive();
 
+function questionSix(){
 let myFavNumber = 5;
 let userResponse = +prompt('Can you guess my favorite number? HINT: it is less than 10 and you have 4 tries to guess!');
 
@@ -129,8 +131,9 @@ while (attemptsRemaining) {
       alert('Close call, but you got');
     }
   }
-
 }
+}
+questionSix();
 
 // // array of possible answers
 
