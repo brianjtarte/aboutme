@@ -1,6 +1,6 @@
 'use strict';
 
-
+function questionOne (){
 let userName = prompt('Hey! What\'s your name?');
 alert('Hello ' + userName);
 
@@ -12,15 +12,17 @@ let answer = 0;
 
 if(answer1 === 'yes' || answer1 === 'y'){
 
-  alert('No...I LOVE them!');
-  answer++;
-}
-else if (answer1 === 'no' || answer1 === 'n'){
-  alert('This is the opposite of the correct answer.');
-}
-else {
-  alert('Please answer yes or no');
-}
+    alert('No...I LOVE them!');
+    answer++;
+  }
+  else if (answer1 === 'no' || answer1 === 'n'){
+    alert('This is the opposite of the correct answer.');
+  }
+  else {
+    alert('Please answer yes or no');
+  }
+  }
+questionOne();
 
 let answer2 = prompt('Did I fix fighter jets in the Marine Corps?').toLowerCase();
 
