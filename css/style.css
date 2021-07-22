@@ -1,3 +1,10 @@
+body {
+  background-image: url("/img/cool-background.png");
+  background-color:dimgray;
+  background-size: auto;
+  background-repeat:no-repeat;
+}
+
 main {
   width: 960px;
   margin: 30px auto;
@@ -84,9 +91,7 @@ main p {
   padding-left: 30px;
 }
 
-body {
-  background-image: url ("img/me.jpg");
-}
+
 
 #education {
   padding-top: 5px;
