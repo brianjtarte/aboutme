@@ -43,6 +43,7 @@ if(answer2 === 'yes' || answer2 === 'y'){
 }
 questionTwo();
 
+function questionThree(){
 let answer3 = prompt('Is chocolate ice cream my favorite flavor?').toLowerCase();
 
 // console.log('User entered answer to question 3 ' + answer3);
@@ -57,6 +58,8 @@ else if(answer3 === 'no' || answer3 === 'n'){
 else {
   alert('Really? You didn\'t learn the SECOND time? Please answer yes or no.');
 }
+}
+questionThree();
 
 let answer4 = prompt('Did Bill Nye The Science Guy give me a ride in his Tesla?').toLowerCase();
 
