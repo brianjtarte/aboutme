@@ -52,15 +52,16 @@ if(answer3 === 'yes' || answer3 === 'y'){
   alert('I know, it\'s basic, but I love it!');
   answer++;
 }
-else if(answer3 === 'no' || answer3 === 'n'){
-  alert('Obviously, you\'re wrong.');
-}
-else {
-  alert('Really? You didn\'t learn the SECOND time? Please answer yes or no.');
-}
+  else if(answer3 === 'no' || answer3 === 'n'){
+    alert('Obviously, you\'re wrong.');
+  }
+  else {
+    alert('Really? You didn\'t learn the SECOND time? Please answer yes or no.');
+  }
 }
 questionThree();
 
+function questionFour(){
 let answer4 = prompt('Did Bill Nye The Science Guy give me a ride in his Tesla?').toLowerCase();
 
 // console.log('User entered answer to question 4 ' + answer4);
@@ -69,12 +70,14 @@ if(answer4 === 'yes' || answer4 === 'y'){
   alert('I know, it sounds crazy, but it is true!');
   answer++;
 }
-else if(answer4 === 'no' || answer4 === 'n'){
-  alert('Surprisingly, you are incorrect.');
+  else if(answer4 === 'no' || answer4 === 'n'){
+    alert('Surprisingly, you are incorrect.');
+  }
+  else {
+    alert('You\'ve had THREE tries to answer correctly! Please answer yes or no.');
+  }
 }
-else {
-  alert('You\'ve had THREE tries to answer correctly! Please answer yes or no.');
-}
+questionFour();
 
 let answer5 = prompt('Is my favorite movie Braveheart?').toLowerCase();
 
