@@ -136,22 +136,14 @@ while (attemptsRemaining) {
 questionSix();
 
 // // array of possible answers
-
+function questionSeven (){
 let listOfAnswers = ['GREEN', 'BLUE', 'BLACK']
-
 // sets attempts to 6 for next question
 let attemptsLeft = 6
 
-
-
 while (attemptsLeft) {
   
-  
-
   let answer = prompt ('Can you guess one of my favorite colors?');
-
- 
-
   // subtracts 1 from attempts
   attemptsLeft--;
 
@@ -177,6 +169,9 @@ while (attemptsLeft) {
     alert(`That is not correct. You have ${attemptsLeft} attempts left.`);
   }
 }
+}
+questionSeven();
+
 alert('My three favorite colors are blue, green, and black.');
 
 alert('Your score was ' + answer + ' out of 7');
