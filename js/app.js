@@ -1,12 +1,12 @@
 'use strict';
 
+let answer = 0;
 function questionOne (){
 let userName = prompt('Hey! What\'s your name?');
 alert('Hello ' + userName);
 
 let answer1 = prompt('Do I like dogs?').toLowerCase();
 
-let answer = 0;
 
 // console.log('User entered answer to question 1 ' + answer1);
 
@@ -24,21 +24,24 @@ if(answer1 === 'yes' || answer1 === 'y'){
   }
 questionOne();
 
+function questionTwo(){
 let answer2 = prompt('Did I fix fighter jets in the Marine Corps?').toLowerCase();
 
 // console.log('User entered answer to question 2 ' + answer2);
 
 if(answer2 === 'yes' || answer2 === 'y'){
-  alert('Good guess, onto the next one.');
-  answer++;
+    alert('Good guess, onto the next one.');
+    answer++;
+  }
+  else if(answer2 === 'no' || answer2 === 'n'){
+    alert('Guess again!');
+  }
+  else {
+    alert('Really? You didn\'t learn the first time? Please answer yes or no.');
+    answer++;
+  }
 }
-else if(answer2 === 'no' || answer2 === 'n'){
-  alert('Guess again!');
-}
-else {
-  alert('Really? You didn\'t learn the first time? Please answer yes or no.');
-  answer++;
-}
+questionTwo();
 
 let answer3 = prompt('Is chocolate ice cream my favorite flavor?').toLowerCase();
 
