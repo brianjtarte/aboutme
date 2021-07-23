@@ -28,6 +28,7 @@ h2 {
   font-size: 35px;
   font-style:italic;
   padding-left: 10px;
+  padding-bottom: 5px;
   font-family:  Georgia, Times, 'Times New Roman', serif;
  
 }
@@ -38,6 +39,7 @@ header {
   background-color: #9BD5F0;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
+  
 }
 
 
@@ -57,7 +59,7 @@ ol li a {
   text-decoration: none;
 }
 
-
+/* makes image opaque when hovering */
 main img:hover {
   opacity: 0.5;
 }
@@ -92,7 +94,7 @@ main p {
 ul li {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+/* animates text when  you hover - default size is 14px, but when you hover the text size increases to 24px over the course of a set time */
 .target {
   font-size: 14px;
   transition-property: font-size;
@@ -113,7 +115,7 @@ main img {
   border-radius: 10px; 
 }
 
-
+/* this animates the object when hovering. It will spin 360 degrees, one time. */
 @keyframes spinning {
   from { transform: rotate(0deg)}
   to { transform: rotate(360deg)}
@@ -124,7 +126,7 @@ main img {
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
 }
-
+/* used this to center the icon in the footer thanks to the tutorial by Learning Tutorial Point on YouTube */
 .footer-div{
   width: 100%;
   height: auto;
