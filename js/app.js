@@ -8,14 +8,11 @@ function questionOne (){
 
   let answer1 = prompt('Do I like dogs?').toLowerCase();
 
-
-  // console.log('User entered answer to question 1 ' + answer1);
-
   if(answer1 === 'yes' || answer1 === 'y'){
 
     alert('No...I LOVE them!');
     answer++;
-    console.log(answer);
+
   }
   else if (answer1 === 'no' || answer1 === 'n'){
     alert('This is the opposite of the correct answer.');
@@ -29,12 +26,12 @@ questionOne();
 function questionTwo(){
   let answer2 = prompt('Did I fix fighter jets in the Marine Corps?').toLowerCase();
 
-  // console.log('User entered answer to question 2 ' + answer2);
+
 
   if(answer2 === 'yes' || answer2 === 'y'){
     alert('Good guess, onto the next one.');
     answer++;
-    console.log(answer);
+
   }
   else if(answer2 === 'no' || answer2 === 'n'){
     alert('Guess again!');
@@ -49,12 +46,12 @@ questionTwo();
 function questionThree(){
   let answer3 = prompt('Is chocolate ice cream my favorite flavor?').toLowerCase();
 
-  // console.log('User entered answer to question 3 ' + answer3);
+
 
   if(answer3 === 'yes' || answer3 === 'y'){
     alert('I know, it\'s basic, but I love it!');
     answer++;
-    console.log(answer);
+
   }
   else if(answer3 === 'no' || answer3 === 'n'){
     alert('Obviously, you\'re wrong.');
@@ -68,12 +65,12 @@ questionThree();
 function questionFour(){
   let answer4 = prompt('Did Bill Nye The Science Guy give me a ride in his Tesla?').toLowerCase();
 
-  // console.log('User entered answer to question 4 ' + answer4);
+
 
   if(answer4 === 'yes' || answer4 === 'y'){
     alert('I know, it sounds crazy, but it is true!');
     answer++;
-    console.log(answer);
+
   }
   else if(answer4 === 'no' || answer4 === 'n'){
     alert('Surprisingly, you are incorrect.');
@@ -87,12 +84,12 @@ questionFour();
 function questionFive(){
   let answer5 = prompt('Is my favorite movie Braveheart?').toLowerCase();
 
-  // console.log('User entered answer to question 5 ' + answer5);
+
 
   if(answer5 === 'yes' || answer5 === 'y'){
     alert('FREEEEEEEEDOM! ' + 'Thanks for playing, ' + userName);
     answer++;
-    console.log(answer);
+
   }
   else if(answer5 === 'no' || answer5 === 'n'){
     alert('Try again. ' + 'Thanks for playing, ' + userName);
@@ -112,13 +109,12 @@ function questionSix(){
 
   while (attemptsRemaining) {
     for (let i = 0; i < attempts; i++){
-      console.log(`i: ${i}`);
-      console.log(`attemptsRemaining: ${attemptsRemaining}`);
+
       if (userResponse === myFavNumber){
         attemptsRemaining = 0;
         alert(`You're right!`);
         answer++;
-        console.log(answer);
+
         break;
       }
       else if (userResponse < myFavNumber){
@@ -129,6 +125,7 @@ function questionSix(){
         alert(`Too high, guess again! You have ${attemptsRemaining} attempts remaining.`);
         userResponse = +prompt(`Can you try another number?`);  
       }
+      attemptsRemaining--;
       if (attemptsRemaining === 0 && userResponse !== myFavNumber){
         alert('The correct answer is ' + myFavNumber);
       }
@@ -136,53 +133,52 @@ function questionSix(){
         alert('Close call, but you got it!');
         answer++;
       }
-      attemptsRemaining--;
+
     }
-    
+
   }
 }
 questionSix();
 
-// // array of possible answers
-// function questionSeven (){
-//   let listOfAnswers = ['GREEN', 'BLUE', 'BLACK']
-//   // sets attempts to 6 for next question
-//   let attemptsLeft = 6;
+// array of possible answers
+function questionSeven (){
+  let listOfAnswers = ['GREEN', 'BLUE', 'BLACK']
+  // sets attempts to 6 for next question
+  let attemptsLeft = 6;
 
-//   while (attemptsLeft) {
+  while (attemptsLeft) {
 
-//     let answerColor = prompt ('Can you guess one of my favorite colors?');
-//     // subtracts 1 from attempts
-//     attemptsLeft--;
+    let answerColor = prompt ('Can you guess one of my favorite colors?');
+    // subtracts 1 from attempts
+    attemptsLeft--;
 
-//     let correct = false;
+    let correct = false;
 
-//     // loops through correct answers to see if answer is correct
-//     for (let i = 0; i < listOfAnswers.length; i++) {
-//       if (answerColor.toUpperCase() === listOfAnswers[i]) {
-//         alert(`That's correct. I love the color ${listOfAnswers[i]} !`);
-//         answer++;
-//         console.log(answer);
-//         // sets correct to true to break while loop
-//         correct = true;
-//         break;
-//       } else {
-//         continue;
-//       }
-//     }
-//     if (correct === true){
-//       // increments correctAnswerCount by 1
-//       // answer++;
-//       // sets attempts to 0 to break while loop
-//       break;
-//     } else {
-//       alert(`That is not correct. You have ${attemptsLeft} attempts left.`);
-//     }
-//   }
-// }
-// questionSeven();
+    // loops through correct answers to see if answer is correct
+    for (let i = 0; i < listOfAnswers.length; i++) {
+      if (answerColor.toUpperCase() === listOfAnswers[i]) {
+        alert(`That's correct. I love the color ${listOfAnswers[i]} !`);
+        answer++;
 
-// alert('My three favorite colors are blue, green, and black.');
+        // sets correct to true to break while loop
+        correct = true;
+        break;
+      } else {
+        continue;
+      }
+    }
+    if (correct === true){
+
+      // sets attempts to 0 to break while loop
+      break;
+    } else {
+      alert(`That is not correct. You have ${attemptsLeft} attempts left.`);
+    }
+  }
+}
+questionSeven();
+
+alert('My three favorite colors are blue, green, and black.');
 
 alert('Your score was ' + answer + ' out of 7');
 
